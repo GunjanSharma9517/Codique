@@ -1,0 +1,83 @@
+<!doctype html>
+<html>
+<head>
+<title>Codique</title>
+<link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+<input type="checkbox" id="check">
+<!--headernavnar-->
+<header>
+	<label for="check">
+		<i class="fas fa-bars" id="sidebar_btn"></i>
+	</label>
+	<div class="left_area">
+		<h3>Codique</h3>
+	</div>
+	<div class="right_area">
+		<a href="#" class="admin_btn">Admin</a>
+	</div>
+</header>
+<!--Sidebar-->
+<div class="mainclass">
+<div class="sidebar">
+	
+	
+	<a href="login.html"><span>Admin</span></a>
+	<a href="dashboard.html"><span>Project</span></a>
+	<a href="unittest.html"><span>Unit Test</span></a>	
+	<a href="requirement.html"><span>RTM</span></a>
+</div>
+
+	
+
+<div class="dashboard">
+<div class="unittesttable">
+	
+	<div class="rID">
+		<h4>Requirement ID</h4><input type="text" placeholder="Enter Req id" name="rID">
+	</div>
+	<div class="rOwn">
+		<h4>Requirement Owner</h4><input type="text" placeholder="Enter Req owner name" name="rOwn">
+	</div>
+	<div class="rDesc">
+		<h4>Description</h4><textarea id="description" name="w3review" rows="3" cols="40">
+  		</textarea>
+	</div>
+	
+	<div class="reqSub">
+		<button type="button" class="cancelbtn">Submit</button> 
+	</div>
+
+</div>
+
+<br><br><br>
+<table>
+ 
+  <tr>
+    <td>1</td>
+    <td>Check Data base connection</td>
+    <td>Check the CRM Legacy connection</td>
+    <td>R001</td>
+    <td><button type="button" class="cancelbtn">Proceed for Unit Test</button> </td> 
+    
+ 		
+  </tr>
+  <tr>
+<td>2</td>
+    <td>Check Filed length SSTM</td>
+    <td>Filed length should be 20, Data format YYYY_MM_DD. Should be design as per DTA?IBR</td>
+	<td>R001</td>
+    <td><button type="button" class="cancelbtn">Proceed for Unit Test</button></td>
+  </tr>
+ 
+</table>
+
+</div>
+
+</body>
+
+
+</html>

@@ -1,0 +1,90 @@
+<!doctype html>
+<html>
+<head>
+<title>Codique</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<input type="checkbox" id="check">
+<!--headernavnar-->
+<header>
+	<label for="check">
+		<i class="fas fa-bars" id="sidebar_btn"></i>
+	</label>
+	<div class="left_area">
+		<h3>Codique</h3>
+	</div>
+	<div class="right_area">
+		<a href="#" class="admin_btn">Admin</a>
+	</div>
+</header>
+<!--Sidebar-->
+<div class="mainclass">
+<div class="sidebar">
+	
+	
+	<a href="login.html"><span>Admin</span></a>
+	<a href="dashboard.html"><span>Project</span></a>
+	<a href="unittest.html"><span>Unit Test</span></a>	
+	<a href="requirement.html"><span>RTM</span></a>
+</div>
+<div class="dashboard">
+<div class="unittesttable">
+	<div class="UnitTescase">
+		<h4>Title</h4><textarea id="description" name="w3review" rows="3" cols="40">
+  		</textarea>
+	</div>
+	<div class="UnitDesc">
+		<h4>Description</h4><textarea id="description" name="w3review" rows="3" cols="40">
+  		</textarea>
+	</div>
+	<div class="reqID">
+	<h4>Requirement ID </h4>
+		<select name="select" id="select" style="width: 48%;height: 40px;">
+		<option value="R001">R001</option> 
+		<option value="R002">R002</option>
+ 		 </select>
+	</div>
+	<div class="reqSub">
+		<button type="button" class="cancelbtn">Submit</button> 
+	</div>
+
+</div>
+<div class="unitTest">
+		<ul>
+  			<li><a class="icare" href="#home">Home</a></li>
+  			<li><a href="#">Unit Test</a></li>
+  			<li><a href="#">Peer Review</a></li>
+  			<li><a href="#">Vision History</a></li>
+			<li style="margin-top: -3px;"><a href="#" class="pdfBtn">Export PDF</a></li>
+			<li><a href="#" class="xlsBtn">Export XLS</a></li>
+		</ul>
+</div>
+<br><br><br>
+<table>
+ 
+  <tr>
+    <td>1</td>
+    <td>Check Data base connection</td>
+    <td>Check the CRM Legacy connection</td>
+    <td>R001</td>
+    <td><button type="button" class="cancelbtn">Ready for peer review</button> </td> 
+    
+ 		
+  </tr>
+  <tr>
+<td>2</td>
+    <td>Check Filed length SSTM</td>
+    <td>Filed length should be 20, Data format YYYY_MM_DD. Should be design as per DTA?IBR</td>
+	<td>R001</td>
+    <td><button type="button" class="cancelbtn">Ready for peer review</button></td>
+  </tr>
+ 
+</table>
+
+</div>
+
+</body>
+
+
+</html>

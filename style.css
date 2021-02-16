@@ -1,0 +1,341 @@
+body {
+  font-family: Calibri, Helvetica, sans-serif;
+  
+	margin:0;
+	Padding:0;
+}
+.box1
+{
+    	 margin-top: 50px;
+   	 margin-bottom: 50px;
+	background-color: white;
+	width: 40%;
+	margin-left: 30%;
+   	 margin-right: 50px;
+	padding: 25px; 
+}
+.box1 h2 {
+    display: block;
+    font-size: 1.5em;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+button { 
+       background-color: #4CAF50; 
+        width: 50%;
+        color: orange; 
+        padding: 15px; 
+        margin: 10px 0px; 
+        border: none; 
+        cursor: pointer; 
+         } 
+  
+ input[type=text], input[type=password] { 
+        width: 100%; 
+        margin: 8px 0;
+        padding: 12px 20px; 
+        display: inline-block; 
+        border: 2px solid green; 
+        box-sizing: border-box; 
+    }
+ button:hover { 
+        opacity: 0.7; 
+    } 
+  .cancelbtn { 
+        width: auto; 
+        padding: 10px 18px;
+        margin: 10px 5px;
+    } 
+      
+   
+.container { 
+        
+        background-color: gray;
+	width: 50%;
+	margin:0 auto;
+	padding: 25px; 
+    } 
+.mainclass {
+	    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+header
+{
+	
+	background:#22242A;
+	padding:20px;
+	width: 100%;
+	height:30px;
+}
+.left_area h3
+{
+	color:#fff;
+	margin:0;
+	text-transform:uppercase;
+	font-size:22px;
+	font-weight:900;
+}
+.right_area{
+    margin-top: -23px;
+ 
+    margin-left: 220px;
+}
+.admin_btn
+{
+	padding:5px;
+	background:#19B303;
+	text-decoration:none;
+	
+	
+	margin-left:900px;
+	border-radius:2px;
+	font-size:15px;
+	font-weight:500;
+	color:#fff;
+	transition:0.5s;
+	transition-property:background;
+	
+}
+.admin_btn:hover{
+	background: #0D9DBB;
+}
+.sidebar
+{
+	background:#2F323A;
+	
+	padding-top:90px;
+	
+	left: 0;
+	width: 250px;
+	height: 100%;
+	transition:0.5s;
+	transition-property:left;
+}
+.sidebar center {
+	width:100px;
+	height:100px;
+	margin-top: 10px;
+
+}
+.sidebar h4{
+	color: #ccc;
+	margin-top: 0;
+	margin-bottom: 20px;
+}
+.sidebar a{
+	color: #fff;
+	display: block;
+	width: 100%;
+	line-height: 60px;
+	text-decoration: none;
+	padding-left: 40px;
+	box-sizing: border-box;
+	transition-property: background;
+}
+.sidebar a:hover{
+	background:#19B3D3;
+	
+}
+.sidebar i{
+	padding-right: 10px;
+		}
+label #sidebar_btn {
+	z-index:1;
+	color:#fff;
+	position: fixed;
+	cursor:pointer;
+	left:300px;
+	font-size: 20px;
+	margin:5px 0;
+transition:0.5s;
+	transition-property:color;
+
+}
+label #sidebar_btn:hover{
+	color:19B303;
+	
+}
+#check {display: none;}
+#check:checked ~ .sidebar{
+	left:-190px;	
+	    
+}
+#check: checked ~.sidebar a span{
+	display:none;
+}
+#check:checked ~sidebar a{
+	font-size: 20px;
+	margin-left:170px;
+	width:80px;
+}
+.details{
+	margin-left:250px; 
+    	margin-top: 16%;
+    	background-color: lightcyan;
+    	width: 60%;
+       padding: 25px;
+    
+}
+#Man{
+width: 250px;
+}
+#Lead{
+width: 250px;
+}
+.add_btn
+{
+	padding:5px;
+	background:#19B303;
+	text-decoration:none;		
+	color:#fff;
+	transition:0.5s;
+	transition-property:background;
+	
+}
+.admin_btn:hover{
+	background: #0D9DBB;
+}
+.dashboard{
+    margin-left: 250px;
+   
+    margin-top: -700px;
+    
+    padding: 20px;
+   
+	}
+.dashboard span{
+}
+.content{
+    margin-left: 250px;
+    background-position: centre;
+    
+    margin-top: -70px;
+    margin-right: 100%;
+        width: 50%;
+    /* margin: 0 auto; */
+    padding: 20px;
+    display: block;
+	}
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+
+.rID
+{
+    margin-left: 12px;
+    width: 23%;
+}
+.rOwn
+{
+        margin-top: -13%;
+    margin-left: 62%;
+    width: 24%;
+}
+
+.rStatus
+{
+    margin-top: -9%;
+    margin-left: 80%;
+    width: 30%;
+}
+.rStatus select{
+
+        width: 166px;
+    height: 44px;
+}
+.rDesc{
+        margin-left: 267px;
+
+    margin-top: -114px;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111;
+}
+.unitTest
+{
+    margin-top: 20%;
+}
+.pdfBtn
+{
+	padding:5px;
+	background:#19B303;
+	text-decoration:none;
+	margin-top: -4%;
+    margin-right: 36px;
+    margin-left: 808px;
+    border-radius: 2px;
+	font-size:15px;
+	font-weight:500;
+	color:#fff;
+	transition:0.5s;
+	transition-property:background;
+	
+}.xlsBtn
+{
+	padding: 5px;
+    background: #19B303;
+    text-decoration: none;
+    margin-top: -5%;
+    margin-right: -169px;
+    margin-left: 887px;
+    border-radius: 2px;
+    font-size: 15px;
+    font-weight: 500;
+    color: #fff;
+    transition: 0.5s;
+    transition-property: background;
+	
+}
+.DefectID{
+    width: 40%;
+    margin-top: -160px;
+    margin-left: 498px;
+}
+.UnitDesc
+{
+	margin-left: 35%;
+    	margin-top: -12%;
+}
+.reqID
+{
+	margin-left: 70%;
+   	 margin-top: -12%;
+}
+.reqSub
+{
+	margin-top: -6%;
+    	margin-left: 89%;
+}
