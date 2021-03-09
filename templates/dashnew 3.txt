@@ -1,0 +1,15 @@
+
+		 <form style="padding-top:0px "method="POST"> 
+		<br>
+		
+			<h3>Manager name<h3><br>
+			<input style="height:30px;width:200px"name="managername">
+			<h3>Project name<h3><br>
+			<input style="height:30px;width:200px"name="projectname">
+			<input class="button" type="submit">
+		<br>
+
+</form>
+	
+
+	
