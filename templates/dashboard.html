@@ -2,7 +2,7 @@
 <html>
 <head>
 <title>Codique</title>
-<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href=".\static\style.css">
 
 </head>
 <body>
@@ -44,29 +44,32 @@ Status
 
 <div class="content">
 	<div class="details">
+	 <form style="padding-top:0px "method="POST"> 
 		<p>Project Details:</p>
 
 		<label for="project">Project Name:</label>
-		<select name="project" id="Project">
+		<select name="projectname" id="Project">
 		<option value="Project1">Project1</option> 
 		<option value="Project2">Project2</option> 
 		<option value="Project3">Project3</option>
  		 </select>
 		</br></br>
 		<label for="Manager">Manager Name:</label>
-		<select name="Manager" id="Manager">
+		<select name="managername" id="Manager">
 		<option value="Manager1">Manager1</option> 
 		<option value="Manager2">Manager2</option> 
 		<option value="Manager3">Manager3</option>
  	 	</select>
 		<p>Description:</p>
-		<textarea id="description" name="w3review" rows="4" cols="50">
+		<textarea id="description"  rows="4" cols="50" name="prjdesc">
   		</textarea>
 
-		<a href="#" class="add_btn">Add</a>
+		<!-- <a href="#" class="add_btn">Add</a> -->
+			<input class="button" type="submit">
 	
 
 	</div>
+	</form>
 
 </div>
 
@@ -75,4 +78,4 @@ Status
 </body>
 
 
-</html>
+</html>	
