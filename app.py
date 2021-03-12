@@ -12,12 +12,12 @@ def fetechdata():
         mname = request.form['managername']
         pname = request.form['projectname']
         nors = request.form['prjdesc']
-        # try:
+        
         get_project_details(mname,pname,nors)
-             # message= 'Created tables.Created files.'
-        # except:
-            # message='Tables already exist'
-        return render_template('dashboard.html',mname=mname,pname=pname,nors=nors)
+        displayOP = display()
+       
+            
+        return render_template('dashboard.html',mname=mname,pname=pname,nors=nors,displayOP=displayOP)
     elif request.method == 'GET':
         return render_template('dashboard.html')
         
