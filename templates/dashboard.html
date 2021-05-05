@@ -1,37 +1,51 @@
 <!doctype html>
 <html>
 <head>
-<title>Codique</title>
-<link rel="stylesheet" href=".\static\style.css">
-
+<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   	<link rel="stylesheet" href="..\static\stylesheet.css">
+	<title>Codique-dashboard</title>
+	<style>
+	input[type=text], select, textarea {
+	width: 100%; /* Full width */
+  padding: 9px; /* Some padding */ 
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 3px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+	</style>
 </head>
 <body>
-	<input type="checkbox" id="check">
-<!--headernavnar-->
-<header>
-	<label for="check">
-		<i class="fas fa-bars" id="sidebar_btn"></i>
-	</label>
-	<div class="left_area">
-		<h3>Codique</h3>
-	</div>
-	<div class="right_area">
-		<a href="#" class="admin_btn">Admin</a>
-	</div>
-</header>
-<!--Sidebar-->
-<div class="mainclass">
-<div class="sidebar">
+	<header>
+        <div class="dashboard-logo">Codique</div>
+        <div class="dashboard-logo-text">
+        <p>LLorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae quaerat quia aliquid? A quod, ullam iure nam sed blanditiis! </p>
+    </div>
+    </header>
 	
-	<a href="login.html"><span>Admin</span></a>
-	<a href="dashboard.html"><span>Project</span></a>
-	<a href="unittest.html"><span>Unit Test</span></a>	
-	<a href="requirement.html"><span>RTM</span></a>
-</div>
-<div class="dashboard">
-<pre><b>Dashboard</b> Version 1.0.0
 
-Status
+<!--Sidebar-->
+<section>
+<div class="mainclass">
+
+<div class="navbar">
+	<ul>
+	<li><a class="active" href="index.html"><span>Admin</span></a></li>
+	<li><a href="dashboard.html"><span>Project</span></a></li>
+	<li><a href="unittest2.html"><span>Unit Test</span></a>	</li>
+	<li><a href="requirement.html"><span>RTM</span></a></li>
+	</ul>
+</div>
+
+<div class="dashboard">
+
+<!--<b>Dashboard</b> Version 1.0.0 
+
+
 </pre>
 
 		<select name="select" id="select">
@@ -39,13 +53,19 @@ Status
 		<option value="RTM">RTm</option> 
  		 </select>		
 		
-
-</div>
-
-<div class="content">
-	<div class="details">
-	 <form style="padding-top:0px "method="POST"> 
-		<p>Project Details:</p>
+-->
+<div class="dash-content" style = " font-size: 19px;">
+	
+	 <form style="padding-top:15px" method="POST"> 
+		
+		<label for="status" >Status:</label>
+		<select name="status" id="status">
+		<option value="status1">Life Science</option> 
+		<option value="status2">RTM</option> 
+	
+ 		 </select>
+			
+		<p style="color: blue;">Project Details:</p>
 
 		<label for="project">Project Name:</label>
 		<select name="projectname" id="Project">
@@ -53,27 +73,37 @@ Status
 		<option value="Project2">Project2</option> 
 		<option value="Project3">Project3</option>
  		 </select>
-		</br></br>
+		<br>
 		<label for="Manager">Manager Name:</label>
 		<select name="managername" id="Manager">
 		<option value="Manager1">Manager1</option> 
 		<option value="Manager2">Manager2</option> 
 		<option value="Manager3">Manager3</option>
  	 	</select>
+		
 		<p>Description:</p>
 		<textarea id="description"  rows="4" cols="50" name="prjdesc">
   		</textarea>
+		
 
 		<!-- <a href="#" class="add_btn">Add</a> -->
-			<input class="button" type="submit">
+		<br>
+			<input class="btn" type="submit" style="width : 100%">
+			<br><br>
+			<!--{{displayOP}} -->
+			
 	
-
-	</div>
 	</form>
+	
+	
+			<!--{{'xyz'}} -->
+			
 
+</div>
 </div>
 
 </div>
+</section>
 
 </body>
 
